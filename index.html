@@ -296,7 +296,7 @@ footer a{color:#DDE6D9}
   <div class="faq">
     <details><summary>Czy Planer gwarantuje zgodność z RODO?</summary><p>Żaden program tego nie gwarantuje, bo za dane odpowiada administrator, czyli psycholog. Planer daje Ci narzędzia, które pomagają spełnić wymogi RODO i ustawy o zawodzie psychologa: kodowanie pacjentów, szyfrowanie, przechowywanie wyłącznie na Twoim urządzeniu i pilnowanie terminów przechowywania dokumentacji.</p></details>
     <details><summary>Na jakim urządzeniu działa?</summary><p>Na tablecie z Androidem lub iPadzie, a także na komputerze. Najlepiej w Chrome lub Safari. Planer jest projektowany pod tablet z rysikiem, ale rysik nie jest konieczny.</p></details>
-    <details><summary>Gdzie są przechowywane dane pacjentów?</summary><p>Tylko na Twoim urządzeniu, zaszyfrowane Twoim hasłem. Nie ma serwera z danymi. Dlatego regularnie rób kopię zapasową, bo planer o niej przypomina. Zapomnianego hasła nie da się odzyskać.</p></details>
+    <details><summary>Gdzie są przechowywane dane pacjentów?</summary><p>Tylko na Twoim urządzeniu, zaszyfrowane Twoim hasłem. Nie ma serwera z danymi. Dlatego regularnie rób kopię zapasową, bo planer o niej przypomina. Zapomnianego hasła nie da się odzyskać. Jeśli chcesz, możesz włączyć wysyłanie samych terminów do swojego Kalendarza Google: trafiają tam tylko kod pacjenta, godzina i rodzaj spotkania, bez nazwisk i notatek. Ta opcja jest domyślnie wyłączona.</p></details>
     <details><summary>Czy potrzebuję internetu?</summary><p>Tylko przy pierwszej instalacji i do pobrania aktualizacji. Na co dzień planer działa offline.</p></details>
     <details><summary>Czy planer stawia diagnozy?</summary><p>Nie. Planer porządkuje dokumentację i liczy wyniki skal przesiewowych. Rozpoznanie, kody i wnioski wpisujesz sama, na podstawie własnej oceny klinicznej.</p></details>
     <details><summary>Czy mogę używać na dwóch urządzeniach?</summary><p>Licencja jest dla jednej osoby. Dane możesz przenieść między urządzeniami przez zaszyfrowaną kopię zapasową, ale się nie synchronizują. Najwygodniej pracować na jednym tablecie.</p></details>
@@ -325,8 +325,8 @@ footer a{color:#DDE6D9}
 const LINKI = {
   kup: 'https://cart.easy.tools/checkout/89397755/planer-gabinetu-cyfrowy-planer-psychologa',
   demo: 'https://kwalioszczyk-bot.github.io/planer-psychologa/app/#demo',
-  regulamin: '',
-  prywatnosc: ''
+  regulamin: '/regulamin.html',
+  prywatnosc: '/polityka-prywatnosci.html'
 };
 for (const [k, cls] of [['kup','.js-buy'],['demo','.js-demo'],['regulamin','.js-regulamin'],['prywatnosc','.js-prywatnosc']])
   if (LINKI[k]) document.querySelectorAll(cls).forEach(a => a.href = LINKI[k]);
